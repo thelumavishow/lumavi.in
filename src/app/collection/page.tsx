@@ -13,9 +13,15 @@ export default function CollectionPage() {
       <Header />
 
       <main className="flex flex-1 flex-col items-center justify-center px-6 py-28 md:py-36 text-center">
-        {/* Subtle ambient glow */}
-        <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
-          <div className="h-[320px] w-[320px] md:h-[450px] md:w-[450px] rounded-full bg-[#6B804C]/20 blur-3xl" />
+        {/* Subtle ambient glow without overflow clipping */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none w-[700px] h-[450px] max-w-[100vw] opacity-70">
+          <div
+            className="w-full h-full rounded-full blur-[90px] pointer-events-none select-none"
+            style={{
+              background:
+                "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(107, 128, 76, 0.35) 0%, rgba(107, 128, 76, 0.16) 35%, rgba(107, 128, 76, 0.04) 60%, transparent 80%)",
+            }}
+          />
         </div>
 
         <div className="relative z-10 max-w-2xl space-y-6">

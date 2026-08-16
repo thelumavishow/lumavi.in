@@ -46,8 +46,8 @@ export function Header() {
       <div
         className={`w-full mx-auto flex items-center justify-between pointer-events-auto transition-all duration-500 ease-in-out ${
           scrolled
-            ? "max-w-4xl rounded-full px-4 sm:px-8 py-1.5 sm:py-3 md:py-3.5 bg-[#263016]/55 backdrop-blur-2xl backdrop-saturate-150 ring-1 ring-white/15 shadow-[0_12px_32px_-8px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.3),inset_0_1px_2px_rgba(255,255,255,0.2),inset_0_-1px_1px_rgba(0,0,0,0.4)]"
-            : "max-w-[100%] rounded-none pl-10 sm:pl-16 md:pl-24 pr-8 sm:pr-12 md:pr-16 py-4 md:py-5 bg-transparent ring-1 ring-transparent shadow-none"
+            ? "max-w-4xl rounded-full px-4 sm:px-8 py-1.5 sm:py-3 md:py-3.5 bg-[#263016]/75 backdrop-blur-2xl shadow-[0_10px_35px_rgba(0,0,0,0.3)]"
+            : "max-w-[100%] rounded-none pl-10 sm:pl-16 md:pl-24 pr-8 sm:pr-12 md:pr-16 py-4 md:py-5 bg-transparent shadow-none"
         }`}
       >
         {/* Lumavi Logo Asset */}
@@ -111,7 +111,7 @@ export function Header() {
 
           {/* Compact Dropdown Popup Box */}
           {mobileMenuOpen && (
-            <div className="absolute right-0 top-[calc(100%+8px)] z-50 w-48 rounded-xl border border-white/15 bg-[#263016]/95 backdrop-blur-2xl p-2 shadow-[0_12px_32px_rgba(0,0,0,0.5)] animate-in fade-in zoom-in-95 duration-150">
+            <div className="absolute right-0 top-[calc(100%+8px)] z-50 w-48 rounded-2xl bg-[#263016]/95 backdrop-blur-2xl p-2 shadow-[0_12px_36px_rgba(0,0,0,0.45)] animate-in fade-in zoom-in-95 duration-150">
               <nav className="flex flex-col space-y-1 text-left">
                 <Link
                   href="/"

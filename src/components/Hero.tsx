@@ -3,9 +3,15 @@ import Link from "next/link";
 export function Hero() {
   return (
     <section className="relative flex flex-col items-center justify-start px-6 pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-12 sm:pb-16 md:pb-20 lg:pb-24 text-center bg-transparent">
-      {/* Decorative ambient subtle background glow */}
-      <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
-        <div className="h-[360px] w-[360px] md:h-[500px] md:w-[500px] rounded-full bg-[#6B804C]/25 blur-3xl" />
+      {/* Decorative ambient subtle background glow without overflow clipping */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none w-[800px] h-[500px] max-w-[100vw] opacity-70">
+        <div
+          className="w-full h-full rounded-full blur-[90px] pointer-events-none select-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(107, 128, 76, 0.4) 0%, rgba(107, 128, 76, 0.18) 35%, rgba(107, 128, 76, 0.05) 60%, transparent 80%)",
+          }}
+        />
       </div>
 
       <div className="relative z-10 mx-auto max-w-3xl space-y-8">
