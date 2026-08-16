@@ -35,7 +35,7 @@ export function FloatingActionMenu() {
       >
         {/* Email Us Button */}
         <a
-          href="mailto:hello@lumavi.com"
+          href="mailto:thelumavishow@gmail.com"
           onClick={() => setIsOpen(false)}
           className="flex items-center gap-2.5 rounded-full bg-[#F9F7F3]/95 px-4 py-2.5 text-xs sm:text-sm font-medium tracking-wide text-[#263016] shadow-[0_8px_24px_rgba(0,0,0,0.35)] backdrop-blur-xl ring-1 ring-white/40 transition-all duration-200 hover:bg-white hover:scale-105 active:scale-95"
           aria-label="Email Us"
@@ -46,7 +46,7 @@ export function FloatingActionMenu() {
 
         {/* Instagram Button */}
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/nibu.rinshad/"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => setIsOpen(false)}
